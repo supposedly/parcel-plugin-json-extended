@@ -18,9 +18,9 @@ Lots of users inculding me are suffered from the build-in feature of `parcel` wh
 
 ## Installation
 ```
-yarn add parcel-plugin-json-url-or-data-loader --dev
+yarn add parcel-plugin-json-extended --dev
   or
-npm i parcel-plugin-json-url-or-data-loader --save-dev
+npm install parcel-plugin-json-extended --save-dev
 ```
 
 ## Usage
