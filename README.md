@@ -2,7 +2,7 @@
 ![DUB](https://img.shields.io/dub/l/vibe-d.svg)
 
 ## What
-Expands the functionality of [parcel-plugin-json-url-loader](https://github.com/shunia/parcel-plugin-url-loader):
+Expands upon the functionality of [parcel-plugin-json-url-loader](https://github.com/shunia/parcel-plugin-url-loader):
 ```js
 // imports JSON object
 import { data as foo } from 'path/to/file.json';
@@ -18,9 +18,9 @@ Lots of users inculding me are suffered from the build-in feature of `parcel` wh
 
 ## Installation
 ```
-yarn add parcel-plugin-json-extended --dev
+yarn add --dev parcel-plugin-json-extended
   or
-npm install parcel-plugin-json-extended --save-dev
+npm install --save-dev parcel-plugin-json-extended
 ```
 
 ## Usage
