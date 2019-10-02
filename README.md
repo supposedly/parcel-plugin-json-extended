@@ -11,23 +11,24 @@ import { data as foo } from 'path/to/file.json';
 import { url as bar } from 'path/to/file.json';
 ```
 
-(The remainder of this README is unmodified from original repo)
+(The remainder of this README is unmodified except for codeblocks)
 
 ## Why
 Lots of users inculding me are suffered from the build-in feature of `parcel` which bundles `json` file as strings into the final bundler by default [parcel-bundler#501](https://github.com/parcel-bundler/parcel/issues/501). When people are looking for the official solutions, `parcel` is still waiting for the solution from react community [devongovett@parcel-bundler#501](https://github.com/parcel-bundler/parcel/issues/501#issuecomment-357883317). As a matter of fact, it's something easy to hanle with `parcel`'s plugin system. So I made this.
 
 ## Installation
 ```
-yarn add parcel-plugin-json-url-loader --dev
+yarn add parcel-plugin-json-url-or-data-loader --dev
   or
-npm i parcel-plugin-json-url-loader --save-dev
+npm i parcel-plugin-json-url-or-data-loader --save-dev
 ```
 
 ## Usage
 There is no options for you to think of. Just install it and checkout the output:
 ```
-const jsonPath = require('path/to/json/file.json');
-console.log(jsonPath); // /file.3a855491.json
+const asset = require('path/to/json/file.json');
+console.log(asset.url); // /file.3a855491.json
+console.log(asset.data); // { json object... }
 ```
 
 ## Contribution
