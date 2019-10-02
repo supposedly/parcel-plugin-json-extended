@@ -1,9 +1,9 @@
 {
-  "name": "parcel-plugin-json-url-loader",
-  "version": "0.1.2",
+  "name": "parcel-plugin-json-url-or-data-loader",
+  "version": "0.1.0",
   "main": "./lib/index.js",
-  "author": "shunia<me@qfhuang.pw>",
-  "description": "Output parcel's json files as urls, rather than bundled strings",
+  "author": "eltrhn <eltrhn@gmail.com>",
+  "description": "Provide the option to load either a path or JSON data from a JSON file within Parcel",
   "license": "MIT",
   "devDependencies": {
     "parcel-bundler": "^1.8.1"

@@ -1,8 +1,17 @@
-# parcel-plugin-json-url-loader
+# parcel-plugin-json-url-or-data-loader
 ![DUB](https://img.shields.io/dub/l/vibe-d.svg)
 
 ## What
-Does exactly the plugin name told: make `require`d or `import`ed json returns url instead of strings.
+Expands the functionality of [parcel-plugin-json-url-loader](https://github.com/shunia/parcel-plugin-url-loader):
+```js
+// imports JSON object
+import { data as foo } from 'path/to/file.json';
+
+// imports file URL
+import { url as bar } from 'path/to/file.json';
+```
+
+(The remainder of this README is unmodified from original repo)
 
 ## Why
 Lots of users inculding me are suffered from the build-in feature of `parcel` which bundles `json` file as strings into the final bundler by default [parcel-bundler#501](https://github.com/parcel-bundler/parcel/issues/501). When people are looking for the official solutions, `parcel` is still waiting for the solution from react community [devongovett@parcel-bundler#501](https://github.com/parcel-bundler/parcel/issues/501#issuecomment-357883317). As a matter of fact, it's something easy to hanle with `parcel`'s plugin system. So I made this.
