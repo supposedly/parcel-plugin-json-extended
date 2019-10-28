@@ -2,7 +2,7 @@
 ![DUB](https://img.shields.io/dub/l/vibe-d.svg)
 
 ## What
-Expands upon the functionality of [parcel-plugin-json-url-loader](https://github.com/shunia/parcel-plugin-url-loader):
+Expands upon the functionality of [parcel-plugin-json-url-loader](https://github.com/shunia/parcel-plugin-json-url-loader):
 ```js
 // imports JSON object
 import { data as foo } from 'path/to/file.json';
